@@ -1,7 +1,5 @@
 /* test css Paul*/
-* {
-  border-
-}
+
 
 
 h2, strong {
@@ -26,17 +24,12 @@ width: 100%;
   width: 100%;
 }
 
-.destinationSombre, .destinationClaire{
+.destination{
   position: absolute; 
   top: 60px; 
   left: 0; 
   width: 100%; 
   font-size: 3rem;
-  text-transform: uppercase;
-}
-
-.destinationSombre{
-  color: #afaaaa;
 }
 
 /* aside{
@@ -112,15 +105,12 @@ h2 {
   color: darkslategrey;
 }
 
-.jour {
+.jour { 
   text-align: center;
   padding-bottom: 1rem;
   color: darkslategrey;
 }
-
-.menujour{
-  text-transform: uppercase;
-}
+/* .jour n'est pas utilisée? */
 
 li{
   padding: 1rem;
