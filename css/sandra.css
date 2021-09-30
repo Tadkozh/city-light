@@ -1,0 +1,32 @@
+/* body marseille */ 
+
+.activity{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border : solid lightblue; 
+  }
+  p {
+    padding: 1em 2em 1em 2em ;
+  }
+  
+  .activity .text{
+    position: absolute;
+    text-align: center;
+    color: black;
+    padding : 4em 5em 5em 5em;
+    font-size: 1.5em;
+  }
+  /* carousel */
+  .caroussel{
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+  }
+
+  /* ------- REMINDER ------- */
+/* min-width if screen >= {...} */
+/* min-width = mobile-first */
+
+/* max if screen <= 800px {...} */
+/* max-width = desktop-first */
+  

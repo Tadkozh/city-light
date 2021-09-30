@@ -1,0 +1,30 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 1.625rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Image Format*/
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+
+  background-position: center;
+  color: white;
+}
+
+/* ------- REMINDER ------- */
+/* min-width if screen >= {...} */
+/* min-width = mobile-first */
+
+/* max if screen <= 800px {...} */
+/* max-width = desktop-first */
+  
