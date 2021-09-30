@@ -1,74 +1,94 @@
-* {
-  padding:0;
-  margin:0;
-  box-sizing: border-box;
+/* GENERAL */
+*{
+  margin : 0;
+  padding: 0; 
 }
-body {
-  margin: 0;
-  font-size: 1.625rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+body{
+  font-family: Arial, sans-serif;
+  font-size: 15px;
 }
-
-
-/*Image Format*/
-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20em;
-
-  background-position: center;
-  color: white;
+h2{
+  color: #444; 
+  font-size: 55px;
 }
-
-/* Caroussel */
-.carrousel{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
+h4{
+  font-size: 24px;
+  color: #444;
 }
-.items{
-  width: 100%;
-  height: auto;
-
+p{
+  line-height: 20px; 
+  color: #777;
 }
-
-
-/*Descriptif des villes*/
+a{
+  text-decoration : none;
+  color: #444;
+}
 .wrapper{
-  overflow: hidden;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
-.title{
+small{
+  font-size:13px;
+  font-style: italic;
+}
+
+/*MAIN IMAGE*/
+
+#main-image{
+  height: 500px; 
+  background-image: url("css/src/landing-photo.jpg"); 
+}
+#main-image h2{
+  font-weight: normal;
+  text-transform: uppercase;
   text-align: center;
+  padding: 150px 0 40px 0;
+  margin-bottom: 20px;
+}
+
+/* POSSIBILITIES */
+
+#possibilities{
+  background-color: #efefef;
+  padding: 60px 0;
+}
+#possibilities article{
+  width: 460px;
+  height: 270px;
+  float: left;
+  border-radius: 10px;
+}
+#possibilities article:first-child{
+  margin-right: 20px;
 }
 .ville{
-  display: block;
-  max-width: 100%;
+  background:rgba(255,255,255,0.95);
+  height: 100%;
+  width: 190px;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  box-sizing: border-box;
 }
-.imgville{
-  display: flex;
-  justify-content: flex-start;
+article h4{
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.contentville{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+#possibilities p{
+  text-align: center;
+  margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-/* ------- REMINDER ------- */
-/* min-width if screen >= {...} */
-/* min-width = mobile-first */
-
-/* max if screen <= 800px {...} */
-/* max-width = desktop-first */
-  
+.button-2{
+  color: #fff;
+  background-color: #ff7a00;
+  padding: 6px 20px;
+  border-radius: 3px;
+}
+.button-2:hover{
+  color: #fff;
+  background-color: #02b8dd;
+}
