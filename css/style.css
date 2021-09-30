@@ -8,7 +8,7 @@ body{
   font-size: 15px;
 }
 h2{
-  color: #444; 
+  color: rgb(12, 6, 59); 
   font-size: 55px;
 }
 h4{
@@ -36,8 +36,9 @@ small{
 /*MAIN IMAGE*/
 
 #main-image{
-  height: 500px; 
-  background-image: url("css/src/landing-photo.jpg"); 
+  height: 400px; 
+  background: url("../css/src/test2.jpg") center ;
+  background-size: cover;
 }
 #main-image h2{
   font-weight: normal;
@@ -58,10 +59,11 @@ small{
   height: 270px;
   float: left;
   border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
-#possibilities article:first-child{
-  margin-right: 20px;
-}
+
 .ville{
   background:rgba(255,255,255,0.95);
   height: 100%;
@@ -70,6 +72,9 @@ small{
   border-radius: 10px 0 0 10px;
   text-align: center;
   box-sizing: border-box;
+}
+.article{
+  background-size: cover;
 }
 article h4{
   border-bottom: 1px solid #ddd;
@@ -92,3 +97,15 @@ article h4{
   color: #fff;
   background-color: #02b8dd;
 }
+
+
+
+
+
+ 
+/* ------- REMINDER ------- */
+/* min-width if screen >= {...} */
+/* min-width = mobile-first */
+
+/* max if screen <= 800px {...} */
+/* max-width = desktop-first */
