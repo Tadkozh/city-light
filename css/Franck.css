@@ -1,0 +1,17 @@
+
+.menujour{
+    text-transform: uppercase;
+}
+
+.destinationSombre, .destinationClaire{
+    position: absolute; 
+    top: 60px; 
+    left: 0; 
+    width: 100%; 
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.destinationSombre{
+    color: #afaaaa;
+}

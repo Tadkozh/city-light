@@ -4,8 +4,7 @@
 }
 
 
-h2,
-strong {
+h2, strong {
   color: #333;
 }
 
@@ -27,12 +26,17 @@ width: 100%;
   width: 100%;
 }
 
-.destination{
+.destinationSombre, .destinationClaire{
   position: absolute; 
   top: 60px; 
   left: 0; 
   width: 100%; 
   font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.destinationSombre{
+  color: #afaaaa;
 }
 
 /* aside{
@@ -112,6 +116,10 @@ h2 {
   text-align: center;
   padding-bottom: 1rem;
   color: darkslategrey;
+}
+
+.menujour{
+  text-transform: uppercase;
 }
 
 li{
