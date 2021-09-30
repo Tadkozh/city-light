@@ -1,6 +1,9 @@
+* {
+  border:-1;
+}
 
 
-  h2,
+h2,
 strong {
   color: #333;
 }
@@ -28,14 +31,19 @@ width: 100%;
   top: 60px; 
   left: 0; 
   width: 100%; 
-  font-size: 5em;
+  font-size: 3rem;
 }
 
 aside{
-  padding-top: 5rem;
-  background-color: rgb(252, 241, 241);
-  height: 100vh;
+  background-color: #eee;
+  height: 100%;
   width: 32%;
+  position: sticky;
+  top: 0;
+}
+
+iframe{
+  width: 100%;
 }
 
 .container{
@@ -46,6 +54,7 @@ aside{
 ul{
   list-style-type: none;
   color: #333;
+  font-size: 1rem;
 }
 
 a {
@@ -59,6 +68,40 @@ a:hover{
 img{
   height: auto;
   width: 100%;
+}
+
+img:hover {
+  opacity: 0.5;
+  transition: opacity 0.9s;
+  cursor: pointer;
+}
+
+p{
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+h2 {
+  padding: 1rem;
+  font-size: 2rem;
+  color: darkslategrey;
+}
+
+.jour {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: darkslategrey;
+}
+
+li{
+  padding: 1rem;
 }
 
 

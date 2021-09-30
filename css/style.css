@@ -21,6 +21,46 @@ img {
   color: white;
 }
 
+/* Caroussel */
+.carrousel{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+.items{
+  width: 100%;
+  height: auto;
+
+}
+
+
+/*Descriptif des villes*/
+.wrapper{
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.title{
+  text-align: center;
+}
+.ville{
+  display: block;
+  max-width: 100%;
+}
+.imgville{
+  display: flex;
+  justify-content: flex-start;
+}
+.contentville{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+
 
 
 
