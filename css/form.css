@@ -1,120 +1,134 @@
 /*Form*/
 
 @font-face {
-    font-family: "handwriting";
-    src: url("fonts/journal-webfont.woff2") format("woff2"),
-      url("fonts/journal-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "typewriter";
-    src: url("fonts/veteran_typewriter-webfont.woff2") format("woff2"),
-      url("fonts/veteran_typewriter-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  content {
-    font: 1.3rem sans-serif;
-    padding: 0.5em;
-    margin: 0;
-    background: #222;
-  }
-  
-  form {
-    position: relative;
-    width: 740px;
-    height: 498px;
-    margin: 0 auto;
-    padding: 1em;
-    box-sizing: border-box;
-    background: #fff url(/css/src/background.jpg);
-    /* we create our grid */
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10em 1em 1em 1em;
-  } 
+  font-family: "handwriting";
+  src: url("fonts/journal-webfont.woff2") format("woff2"),
+    url("fonts/journal-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  h1 {
-    font: 1em "typewriter", monospace;
-    align-self: center;
-  }
-  
-  #message {
-    grid-row: 1 / 5;
-  }
-  
-  #from,
-  #reply {
-    display: flex;
-  }
-  
-  label {
-    font: 0.8em "typewriter", sans-serif;
-  }
-  
-  input,
-  textarea {
-    font: 1.4em/1.5em "handwriting", cursive, sans-serif;
-    border: none;
-    padding: 0 10px;
-    margin: 0;
-    width: 80%;
-    background: none;
-  }
-  
-  input:focus,
-  textarea:focus {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-  
-  textarea {
-    display: block;
-  
-    padding: 10px;
-    margin: 10px 0 0 -10px;
-    width: 100%;
-    height: 90%;
-  
-    border-right: 1px solid;
-  
-    /* resize  : none; */
-    overflow: auto;
-  }
-  
-  button {
-    padding: 5px;
-    font: bold 0.6em sans-serif;
-    border: 2px solid #333;
-    border-radius: 5px;
-    background: none;
-    cursor: pointer;
-    transform: rotate(-1.5deg);
-  }
-  
-  button:after {
-    content: " >>>";
-  }
-  
-  button:hover,
-  button:focus {
-    outline: none;
-    background: #000;
-    color: #fff;
-  }
-  hr {
-    background-color: #fff;
-    border-top: 2px dotted #8c8b8b;
-  }
+@font-face {
+  font-family: "typewriter";
+  src: url("fonts/veteran_typewriter-webfont.woff2") format("woff2"),
+    url("fonts/veteran_typewriter-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  /* ------- REMINDER ------- */
+content {
+  font: 1.3rem sans-serif;
+  padding: 0.5em;
+  margin: 0;
+}
+
+form {
+  position: relative;
+  border: #bdbaba solid 1px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  width: 740px;
+  height: 498px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  background: #fff url(/css/src/background.jpg);
+  /* we create our grid */
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10em 1em 1em 1em;
+}
+
+h1 {
+  font: 1em "typewriter", monospace;
+  align-self: center;
+}
+
+#to {
+  margin-top: 150px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 0.6em;
+}
+
+#message {
+  grid-row: 1 / 5;
+  margin-top: 5em;
+}
+
+#reply,
+#from {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+label {
+  font: 0.8em "typewriter", sans-serif;
+  padding-top: 6px;
+}
+
+input,
+textarea {
+  font: 1.4em/1.5em "handwriting", cursive, sans-serif;
+  border: none;
+  padding: 0 10px;
+  margin: 0;
+  width: 80%;
+  background: none;
+}
+
+input:focus,
+textarea:focus {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+textarea {
+  display: block;
+
+  padding: 10px;
+  margin: 10px 0 0 -10px;
+  width: 100%;
+  height: 90%;
+
+  border-right: 1px solid;
+
+  /* resize  : none; */
+  overflow: auto;
+}
+
+button {
+  padding: 5px;
+  font: bold 0.6em sans-serif;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  transform: rotate(-1.5deg);
+}
+
+button:after {
+  content: " >>>";
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #000;
+  color: #fff;
+}
+hr {
+  background-color: #fff;
+  border-top: 2px dotted #8c8b8b;
+}
+
+/* ------- REMINDER ------- */
 /* min-width if screen >= {...} */
 /* min-width = mobile-first */
 
 /* max if screen <= 800px {...} */
 /* max-width = desktop-first */
-  
