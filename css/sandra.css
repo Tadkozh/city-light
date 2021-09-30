@@ -1,27 +1,66 @@
-/* body marseille */ 
 
-.activity{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    border : solid lightblue; 
-  }
-  p {
-    padding: 1em 2em 1em 2em ;
-  }
-  
-  .activity .text{
-    position: absolute;
-    text-align: center;
-    color: black;
-    padding : 4em 5em 5em 5em;
-    font-size: 1.5em;
-  }
-  /* carousel */
-  .caroussel{
-    display: flex;
-    overflow-x: scroll;
-    padding: 1rem 0;
-  }
+
+  h2,
+strong {
+  color: #333;
+}
+
+main{
+  background-color: #eee;
+  height: 100%;
+  width: 68%;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+header{
+text-align: center;
+position: relative;
+width: 100%;
+}
+
+.banner{
+  height: auto;
+  width: 100%;
+}
+
+.destination{
+  position: absolute; 
+  top: 60px; 
+  left: 0; 
+  width: 100%; 
+  font-size: 5em;
+}
+
+aside{
+  padding-top: 5rem;
+  background-color: rgb(252, 241, 241);
+  height: 100vh;
+  width: 32%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  list-style-type: none;
+  color: #333;
+}
+
+a {
+  color: #333;
+}
+
+a:hover{
+  color: cornflowerblue;
+}
+
+img{
+  height: auto;
+  width: 100%;
+}
+
 
   /* ------- REMINDER ------- */
 /* min-width if screen >= {...} */
