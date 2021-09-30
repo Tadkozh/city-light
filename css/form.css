@@ -40,7 +40,7 @@
 
   h1 {
     font: 1em "typewriter", monospace;
-    align-self: end;
+    align-self: center;
   }
   
   #message {
