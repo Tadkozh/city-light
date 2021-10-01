@@ -1,0 +1,114 @@
+/* GENERAL */
+*{
+  margin : 0;
+  padding: 0; 
+}
+body{
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+h2{
+  color: rgb(12, 6, 59); 
+  font-size: 55px;
+}
+h4{
+  font-size: 24px;
+  color: #444;
+}
+p{
+  line-height: 20px; 
+  color: #777;
+}
+a{
+  text-decoration : none;
+  color: #444;
+}
+.wrapper{
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+small{
+  font-size:13px;
+  font-style: italic;
+}
+
+/*MAIN IMAGE*/
+
+#main-image{
+  height: 400px; 
+  background: url("../css/src/test2.jpg") center ;
+  background-size: cover;
+}
+#main-image h2{
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 150px 0 40px 0;
+  margin-bottom: 20px;
+}
+
+/* POSSIBILITIES */
+
+#possibilities{
+  background-color: #efefef;
+  height: 850px;
+  padding: 60px 0;
+}
+#possibilities article{
+  width: 460px;
+  height: 270px;
+  float: left;
+  border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.ville{
+  background:rgba(255,255,255,0.95);
+  height: 100%;
+  width: 190px;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.article{
+  background-size: cover;
+}
+article h4{
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#possibilities p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.button-2{
+  color: #fff;
+  background-color: #ff7a00;
+  padding: 6px 20px;
+  border-radius: 3px;
+}
+.button-2:hover{
+  color: #fff;
+  background-color: #02b8dd;
+}
+
+
+
+
+
+
+
+ 
+/* ------- REMINDER ------- */
+/* min-width if screen >= {...} */
+/* min-width = mobile-first */
+
+/* max if screen <= 800px {...} */
+/* max-width = desktop-first */
