@@ -33,16 +33,18 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65px;
+    height: 7rem;
     padding: 10px;
     color:var(--navbar-color);
     background:var(--navbar-bg-color);
+
 }
 .navbar_links {
     display: flex;
 }
 .navbar_link {
     padding: 0 10px;
+    font-size: xx-large;
 }
 .navbar_link > a {
     text-decoration: none;
@@ -51,6 +53,14 @@ ul{
 .burger {
     display: none;
 }
+.navbar_logo {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    width: 6rem;
+    
+}
+
 /* small device */
 @media screen and (max-width: 768px){
     .navbar_links {
@@ -59,9 +69,11 @@ ul{
         width: 0;
         height: calc(100vh - 65px);
         position: absolute;
-        top: 65px;
+        top: 7rem;
         right: 0;
-        background:var(--navbar-bg-color)
+        background:var(--navbar-bg-color);
+        z-index: 1000;
+        
     }
     .show-nav .navbar_links {
         width: 100%;
