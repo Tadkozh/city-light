@@ -1,11 +1,10 @@
 /*Form*/
 /*trick to see each body's box*/
 
-*{
-  border:solid 2px black;
+
+.content{
+  width: auto;
 }
-
-
 
 .form{
   display:grid;
@@ -94,16 +93,18 @@ label{
   display: flex;
   justify-content: center;
   
+ 
+  
 
 }
 textarea{
   
-  width: 20em;
   line-height: 1.5;
   border-radius: 5px;
   box-shadow: 1px 1px 1px #999;
   background: transparent;
   border: 1px solid #ba68c8;
+  height: 120px;
   resize: none;
   font-size: 100%;
   
@@ -113,17 +114,16 @@ textarea{
 /* (min-width: 734px)*/
 
 @media only screen and (min-width: 734px) {
-  .content {
-    background-color: lightblue;
-  }
-
+  
   .form{
-    height: 30em;
-    width: auto;
+   display:grid;
+   grid-template-columns: 1;
+   grid-template-rows: 4;
 }
 
   .name{
-   
+    grid-column: 1;
+    grid-row: 1;
     padding: 10px;
     width: auto;
     
@@ -131,38 +131,58 @@ textarea{
   }
 
   .email{
-    
+    grid-column: 1;
+    grid-row: 2;
     padding: 10px;
     width: auto;
   
   }
+
+  .messageBox{
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    
+  
+  }
+
+  
+  
 
 }
 
 
 
 @media only screen and (max-width:738px) {
-  .content {
-    background-color: rgb(74, 237, 59);
-    border:solid black 2px;
-    
+  .content{
+   
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
     
   }
 
   .form{
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
   width: 18em;
   height: 30em;
+  border: black solid 2px;
     
 }
 
   .name{
-    
+    grid-column: 1;
+    grid-row: 1;
     width: 13em;
     
   }
 
   .email{
-   
+    grid-column: 1;
+    grid-row: 2;
     width: 13em;
   }
 
@@ -177,19 +197,27 @@ textarea{
    
   }
 
+
+  .messageBox{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 3;
+
+  }
+
   .button {
+    grid-column: 1;
+    grid-row: 4;
     
     width: 22em;
     
   }
 
 
-
-  .messageBox{
-   
-    width: 13em;
   
-  }
+
+
 
 
 }
