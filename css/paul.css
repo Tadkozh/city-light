@@ -1,11 +1,9 @@
-/* test css Paul*/
-* {
-  border-
+*{
+  margin : 0;
+  padding: 0; 
 }
 
-
-h2,
-strong {
+h2, strong {
   color: #333;
 }
 
@@ -29,19 +27,32 @@ width: 100%;
 
 .destination{
   position: absolute; 
-  top: 60px; 
+  top: 100px; 
   left: 0; 
   width: 100%; 
   font-size: 3rem;
 }
 
-aside{
+/* aside{
   background-color: #eee;
   height: 100%;
   width: 32%;
   position: sticky;
   top: 0;
-}
+} */
+
+/* relief aside + add thta with paul css style*/
+aside{
+  padding: 10px 10px;
+  background-color: rgb(252, 241, 241);
+  width: 32%;
+  border: black solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 2px gray;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  }
 
 iframe{
   width: 100%;
@@ -95,20 +106,73 @@ h2 {
   color: darkslategrey;
 }
 
-.jour {
+.jour { 
   text-align: center;
   padding-bottom: 1rem;
   color: darkslategrey;
 }
+/* .jour n'est pas utilisée? */
 
 li{
   padding: 1rem;
 }
 
-/* ------- REMINDER ------- */
-/* min-width if screen >= {...} */
-/* min-width = mobile-first */
-
-/* max if screen <= 800px {...} */
-/* max-width = desktop-first */
+ 
+@media screen and (min-width: 1024px) {
   
+header {
+  height: 40rem;
+
+}
+
+header, img {
+  overflow:hidden ;
+}
+
+.destination {
+  font-size: 5rem;
+}
+
+
+.container {
+  display: block;
+}
+
+aside{
+
+  display: inline-block;
+  width: 90%;
+  position:relative;
+  top: 0;
+  height: 30rem;
+  margin: 5% 5%;
+}
+
+li {
+  float:left
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  width: 100%;
+}
+
+.activity {
+  width: 40%;
+}
+
+#Jour_1, #Jour_2, #Jour_3 {
+   display: flex;
+   justify-content: space-around;
+}
+
+.jour {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+}
