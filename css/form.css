@@ -1,114 +1,74 @@
 /*Form*/
+/*trick to see each body's box*/
 
-@font-face {
-  font-family: "handwriting";
-  src: url("fonts/journal-webfont.woff2") format("woff2"),
-    url("fonts/journal-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+
+.content{
+  width: auto;
 }
 
-@font-face {
-  font-family: "typewriter";
-  src: url("fonts/veteran_typewriter-webfont.woff2") format("woff2"),
-    url("fonts/veteran_typewriter-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-content {
-  font: 1.3rem sans-serif;
-  padding: 0.5em;
-  margin: 0;
-}
-
-form {
-  position: relative;
+.form{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  height: 30em;
+	align-items: center;
+	align-content: stretch;
+  padding: 2em;
+  margin: 2em;
   border: #bdbaba solid 1px;
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-  width: 740px;
-  height: 498px;
-  margin: 0 auto;
-  padding: 1em;
   box-sizing: border-box;
-  background: #fff url(/css/src/background.jpg);
-  /* we create our grid */
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 10em 1em 1em 1em;
+  
 }
 
-h1 {
-  font: 1em "typewriter", monospace;
-  align-self: center;
-}
 
-#to {
-  margin-top: 150px;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  padding: 0.6em;
-}
-
-#message {
-  grid-row: 1 / 5;
-  margin-top: 5em;
-}
-
-#reply,
-#from {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 5px;
-  align-items: center;
-}
-
-label {
-  font: 0.8em "typewriter", sans-serif;
-  padding-top: 6px;
-}
-
-input,
-textarea {
-  font: 1.4em/1.5em "handwriting", cursive, sans-serif;
-  border: none;
-  padding: 0 10px;
-  margin: 0;
-  width: 80%;
-  background: none;
-}
-
-input:focus,
-textarea:focus {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-textarea {
-  display: block;
-
+input{
+  margin-left: 10px;
   padding: 10px;
-  margin: 10px 0 0 -10px;
-  width: 100%;
-  height: 90%;
+  font-size: 100%;
+  border: 2px solid rgb(176, 174, 174);
+  
 
-  border-right: 1px solid;
+}
+.name{
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  
 
-  /* resize  : none; */
-  overflow: auto;
 }
 
-button {
+.email{
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/ span 2;
+  grid-row: 4;
   padding: 5px;
   font: bold 0.6em sans-serif;
-  border: 2px solid #333;
   border-radius: 5px;
-  background: none;
   cursor: pointer;
-  transform: rotate(-1.5deg);
+  
+  
+}
+
+button{
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #d1c4e9;
 }
 
 button:after {
@@ -121,10 +81,149 @@ button:focus {
   background: #000;
   color: #fff;
 }
-hr {
-  background-color: #fff;
-  border-top: 2px dotted #8c8b8b;
+
+
+label{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
+.messageBox{
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  
+ 
+  
+
+}
+textarea{
+  
+  line-height: 1.5;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #999;
+  background: transparent;
+  border: 1px solid #ba68c8;
+  height: 120px;
+  resize: none;
+  font-size: 100%;
+  
+  
+}
+
+/* (min-width: 734px)*/
+
+@media only screen and (min-width: 734px) {
+  
+  .form{
+   display:grid;
+   grid-template-columns: 1;
+   grid-template-rows: 4;
+}
+
+  .name{
+    grid-column: 1;
+    grid-row: 1;
+    padding: 10px;
+    width: auto;
+    
+
+  }
+
+  .email{
+    grid-column: 1;
+    grid-row: 2;
+    padding: 10px;
+    width: auto;
+  
+  }
+
+  .messageBox{
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    
+  
+  }
+
+  
+  
+
+}
+
+
+
+@media only screen and (max-width:738px) {
+  .content{
+   
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  .form{
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
+  width: 18em;
+  height: 30em;
+  border: black solid 2px;
+    
+}
+
+  .name{
+    grid-column: 1;
+    grid-row: 1;
+    width: 13em;
+    
+  }
+
+  .email{
+    grid-column: 1;
+    grid-row: 2;
+    width: 13em;
+  }
+
+
+
+  input{
+    margin-left: 10px;
+    height: 1em;
+    font-size: 100%;
+    border: 2px solid rgb(176, 174, 174);
+    width:8em;
+   
+  }
+
+
+  .messageBox{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 3;
+
+  }
+
+  .button {
+    grid-column: 1;
+    grid-row: 4;
+    
+    width: 22em;
+    
+  }
+
+
+  
+
+
+
+
+}
+
+
+
 
 /* ------- REMINDER ------- */
 /* min-width if screen >= {...} */
