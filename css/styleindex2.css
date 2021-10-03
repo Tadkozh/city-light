@@ -36,15 +36,18 @@ small{
   background: url("../css/src/test2.jpg") center ;
   background-size: cover;
 }
-.wrapper{
+/* .wrapper{
   width: 100vw;
   margin: 0 auto;
   padding: 0 10px;
-}
+} */
 
 #main-image h2{
   /* color: rgb(12, 6, 59);  */
-  color: yellow;
+  color:white;
+  text-shadow:2px 2px 15px yellow;
+  /* color:rgb(12, 6, 59);
+  text-shadow:2px 2px 15px white; */
   font-size: clamp(25px, 5vw, 55px);
   font-weight: bold;
   text-transform: uppercase;
