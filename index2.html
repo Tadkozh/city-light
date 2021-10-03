@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" /><metaname="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
     <title>City-Lights</title>
+
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/styleindex2.css" />
-    <link rel="stylesheet" type="text/css" href="css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/nav.css" /> -->
+    <link rel="stylesheet" type="text/css" href="html/navbarre.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/footer.css" /> -->
 
   </head>
   <body>
-    <nav>
-      <h1>City Light<span>.</span></h1>
-      <ul class="menu">
-
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
-
-      </ul>
-    </nav>
+    <nav class="navbar dark-mode show-nav" role="navigation">
+        <div class="navbar_logo"><!-- <img src="asset/bon-voyage-g74dc59732_640.png" alt=""> --><h1>City Light<span>.</span></h1></div>
+        
+        <ul class="navbar_links">
+          <li class="navbar_link"><a href="index2.html">Accueil</a></li>
+          
+          <li class="navbar_link"><a href="html/visiting-Nantes.html">Nantes</a></li>
+          <li class="navbar_link"><a href="html/visiting-Marseille.html">Marseille</a></li>
+          <li class="navbar_link"><a href="html/visiting-Lyon.html">Lyon</a></li>
+          <li class="navbar_link"><a href="html/visiting-Libourne.html">Libourne</a></li>
+          <li class="navbar_link"><a href="html/visiting-Blaye.html">Blaye</a></li>
+          
+          <li class="navbar_link"><a href="html/contact.html">Contact</a></li>
+        </ul>
+        <button class="burger">
+            <span class="bar"></span>
+        </button>
+      </nav>
 
     <section id="main-image">
       <div class="wrapper">
@@ -28,9 +41,8 @@
   </section>
 
   <section id="possibilities">
-    <div class="containergrid"></div> 
-      <div class="flex">
-          <article  style ="background-image: url('css/src/header-marseille.jpg')">
+    <div class="gridindex">
+          <article class="gridelementindex" style ="background-image: url('css/src/header-marseille.jpg')">
               <div class="ville">
                   <h4>Week-end à Marseille</h4>
                   <p><small>Quelques mots sur marseilleQuelques mots sur marseilleQuelques mots sur marseilleQuelques mots sur marseille</small></p>
@@ -38,7 +50,7 @@
               </div>
           </article>
 
-          <article style = "background-image: url('css/src/header-libourne.jpg')" >
+          <article class="gridelementindex" style = "background-image: url('css/src/header-libourne.jpg')" >
               <div class="ville">
                   <h4>Week-end à Libourne</h4>
                   <p><small>Quelques mots sur Libourne</small></p>
@@ -46,7 +58,7 @@
               </div>
           </article>
 
-          <article style ="background-image: url('css/src/header-lyon.jpg')">
+          <article class="gridelementindex" style ="background-image: url('css/src/header-lyon.jpg')">
               <div class="ville">
                   <h4>Week-end à Lyon</h4>
                   <p><small>La ville des traboules, des gones, des canuts et des "Titis Lyonnais"</small></p>
@@ -54,7 +66,7 @@
               </div>
           </article>
 
-          <article style ="background-image: url('css/src/header-libourne.jpg')">
+          <article class="gridelementindex" style ="background-image: url('css/src/header-libourne.jpg')">
               <div class="ville">
                   <h4>Week-end à Blayes</h4>
                   <p><small>Quelques mots sur Blayes</small></p>
@@ -62,7 +74,7 @@
               </div>
           </article>
 
-          <article style ="background-image: url('css/src/nantesgruebynight.jpg')">
+          <article class="gridelementindex" style ="background-image: url('css/src/nantesgruebynight.jpg')">
               <div class="ville">
                   <h4>Week-end à Nantes</h4>
                   <p><small>Venez découvrir les machines de l'île, la Tour Lu et ses momuments</small></p>
@@ -70,7 +82,7 @@
               </div>
           </article>
 
-          <article style ="background-image: url('css/src/background.jpg')">
+          <article class="gridelementindex" style ="background-image: url('css/src/background.jpg')">
             <div class="ville">
                 <h4>Pour nous contacter</h4>
                 <p><small>Quelques mots </small></p>
@@ -78,14 +90,15 @@
             </div>
         </article>
 
-      </div> -->
-    </div>
+      </div>
   </section>
 
 
 
-    <footer class="footer">
+    <footer>
             <p>&copy;Quai des Bananes</p>
     </footer>
+    
+    <script src="html/navbar.js"></script>
   </body>
 </html>

@@ -1,16 +1,20 @@
 /* GENERAL */
-*{
+*, ::before, ::after{
+    box-sizing: border-box;
     margin : 0;
     padding: 0; 
   }
+
+  root{
+    --res: calc(0.01 * 10vmin)
+  }
+
   body{
+    height: 100vh;
     font-family: Arial, sans-serif;
     font-size: 15px;
   }
-  h2{
-    color: rgb(12, 6, 59); 
-    font-size: 55px;
-  }
+
   h4{
     font-size: 24px;
     color: #444;
@@ -41,29 +45,23 @@
     background-size: cover;
   }
   #main-image h2{
+    color: rgb(12, 6, 59); 
+    font-size: 55px;
+
+    /* color: rgb(12, 6, 59); 
+    font-size: calc(55px * var(--res)); */
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
-    padding: 150px 0 40px 0;
-    margin-bottom: 20px;
   }
   
   /* POSSIBILITIES */
-  
-  #possibilities{
-    background-color: #efefef;
-    /* height: 850px; */
-    padding: 60px 0;
-    margin: 0 auto;
-    width: 100vw;
-  }
-  #possibilities article{
+
+  .gridelementindex{
     width: 460px;
     height: 270px;
     border-radius: 10px;
     background-size: cover;
-    margin-bottom: 10px;
-    margin-right: 10px;
   }
   
   .ville{
@@ -76,19 +74,22 @@
     box-sizing: border-box;
   }
 
-  /* .article{
-    background-size: cover; 
-  } */
-  article h4{
+  #possibilities{
+    height: auto;
+  }
+  
+  .gridelementindex h4{
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
   }
-  #possibilities p{
+
+  .gridelementindex p{
     text-align: center;
     margin-bottom: 20px;
+    height: auto;
   }
   .button-2{
     color: #fff;
@@ -100,52 +101,37 @@
     color: #fff;
     background-color: #02b8dd;
   }
+
+  .gridindex{
+    background-color: #efefef;
+    max-width: 1450px;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, 460px);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  footer{
+    background: aquamarine;
+    height: 50px;
+    width: 100vw;
+    
+  }
   
-  .flex{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-  }
-
-
-
-  @media screen and (min-width: 980px){
-
-    /* #possibilities{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
-
-    /* .containergrid{
-      margin: 0 auto;
-      width: 983px;
-      background-color: #ff7a00;
-    } */
-
-    .flex{
-      width: 925px;
-      margin: 30px auto;
-      display: grid;
-      
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      gap: 50px;
-    }
-  }
-
   @media screen and (max-width: 460px){
     #possibilities article{
-      width: 190px;
+      width: 190px !important ;
+      margin: 5px auto;
     }
   }
-  
-  
-  
-  
-  
-   
+
+
+
+
   /* ------- REMINDER ------- */
   /* min-width if screen >= {...} */
   /* min-width = mobile-first */
