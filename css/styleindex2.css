@@ -45,7 +45,7 @@ small{
 #main-image h2{
   /* color: rgb(12, 6, 59);  */
   color:white;
-  text-shadow:2px 2px 15px yellow;
+  text-shadow:2px 2px 15px black;
   /* color:rgb(12, 6, 59);
   text-shadow:2px 2px 15px white; */
   font-size: clamp(25px, 5vw, 55px);
