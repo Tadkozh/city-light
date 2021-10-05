@@ -59,6 +59,8 @@ small{
 #possibilities{
   height: auto;
   overflow: hidden;
+  background-color: #efefef;
+  width: 100vw;
 }
 
 .gridelementindex{

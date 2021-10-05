@@ -6,13 +6,13 @@
     box-sizing: border-box;
   }
 
-.menujour{
+.menujour .jour{
     text-transform: uppercase;
 }
 
 .destinationSombre, .destination{
     position: absolute; 
-    top: 60px; 
+    top: 100px; 
     left: 0; 
     width: 100%; 
     font-size: 3rem;
@@ -20,10 +20,8 @@
 }
 
 .destinationSombre{
-    color: #afaaaa;
+    color: white;
 }
 
 /* Dans le HTML : Enlever les id des h2 pour les envoyer en haut des images, en les associant aux balises <article>
 ex : <article  id="saintjean" class="activity"> */
-
-/* Par ailleurs, la classe .jour figurant dans le CSS ne semble pas appelée dans le HTML? */
