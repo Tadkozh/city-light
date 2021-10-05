@@ -1,6 +1,7 @@
 *{
   margin : 0;
   padding: 0; 
+  font-family: 'Varela Round', sans-serif;
 }
 
 h2, strong {
@@ -103,7 +104,8 @@ p{
 h2 {
   padding: 1rem;
   font-size: 2rem;
-  color: darkslategrey;
+  color: darkslategray;
+  text-align: center;
 }
 
 .jour { 
@@ -145,7 +147,7 @@ aside{
   position:relative;
   top: 0;
   height: 30rem;
-  margin: 5% 5%;
+  margin: 5% 5% 5% 5%;
 }
 
 li {
