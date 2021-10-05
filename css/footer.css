@@ -42,9 +42,9 @@ p{
   border-radius: 75px;
 }
 .us{
-  margin-left: 2px;
   grid-column: 1;
   grid-row: 2;
+  margin-left: 2px;
 }
 
 /* COPYRIGHT */
@@ -67,14 +67,13 @@ p{
    height: 30px;
  }
 
- /* LIEN */
+ /* MENTIONS */
 .lien{
   grid-column: 2 / span 3;
   grid-row: 1;
   text-align: center;
   color: rgb(12, 6, 59); 
   font-size: 15px;
-  text-align: center;
   font-weight: bold;
   justify-content: center;
  }
