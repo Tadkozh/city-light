@@ -1,16 +1,16 @@
 /* GENERAL */
-*{
+*, ::before, ::after{
+  box-sizing: border-box;
   margin : 0;
   padding: 0; 
 }
+
 body{
+  height: 100vh;
   font-family: Arial, sans-serif;
   font-size: 15px;
 }
-h2{
-  color: rgb(12, 6, 59); 
-  font-size: 55px;
-}
+
 h4{
   font-size: 24px;
   color: #444;
@@ -23,11 +23,7 @@ a{
   text-decoration : none;
   color: #444;
 }
-.wrapper{
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
+
 small{
   font-size:13px;
   font-style: italic;
@@ -40,29 +36,36 @@ small{
   background: url("../css/src/test2.jpg") center ;
   background-size: cover;
 }
+/* .wrapper{
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 10px;
+} */
+
 #main-image h2{
-  font-weight: normal;
+  /* color: rgb(12, 6, 59);  */
+  color:white;
+  text-shadow:2px 2px 15px black;
+  /* color:rgb(12, 6, 59);
+  text-shadow:2px 2px 15px white; */
+  font-size: clamp(25px, 5vw, 55px);
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding: 150px 0 40px 0;
-  margin-bottom: 20px;
 }
 
 /* POSSIBILITIES */
 
 #possibilities{
-  background-color: #efefef;
-  height: 850px;
-  padding: 60px 0;
+  height: auto;
+  overflow: hidden;
 }
-#possibilities article{
+
+.gridelementindex{
   width: 460px;
   height: 270px;
-  float: left;
   border-radius: 10px;
   background-size: cover;
-  margin-bottom: 10px;
-  margin-right: 10px;
 }
 
 .ville{
@@ -74,19 +77,19 @@ small{
   text-align: center;
   box-sizing: border-box;
 }
-.article{
-  background-size: cover;
-}
-article h4{
+
+.gridelementindex h4{
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
 }
-#possibilities p{
+
+.gridelementindex p{
   text-align: center;
   margin-bottom: 20px;
+  height: auto;
 }
 .button-2{
   color: #fff;
@@ -99,16 +102,45 @@ article h4{
   background-color: #02b8dd;
 }
 
+.gridindex{
+  background-color: #efefef;
+  max-width: 1450px;
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, 460px);
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+footer{
+  background: aquamarine;
+  height: 50px;
+  width: 100vw;
+}
+
+.navbar_links {
+  display: flex;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 460px){
+  #possibilities article{
+    width: 190px !important ;
+    margin: 5px auto;
+    overflow: hidden;
+  }
+}
 
 
 
 
-
-
- 
-/* ------- REMINDER ------- */
-/* min-width if screen >= {...} */
-/* min-width = mobile-first */
-
-/* max if screen <= 800px {...} */
-/* max-width = desktop-first */
+  /* ------- REMINDER ------- */
+  /* min-width if screen >= {...} */
+  /* min-width = mobile-first */
+  
+  /* max if screen <= 800px {...} */
+  /* max-width = desktop-first */
