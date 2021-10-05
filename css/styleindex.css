@@ -114,7 +114,6 @@ small{
   
   grid-template-columns: repeat(auto-fill, 460px);
   justify-content: center;
-  gap: 20px;
   overflow: hidden;
 }
 
