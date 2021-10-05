@@ -4,17 +4,25 @@
 
 .content{
   width: auto;
+  display: flex;
+	flex-direction: column;
+ 
+  
 }
 
 .form{
+  
   display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr ;
-  height: 30em;
+  height: auto;
 	align-items: center;
 	align-content: stretch;
+  width: 40em;
   padding: 2em;
-  margin: 2em;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border: #bdbaba solid 1px;
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
@@ -86,141 +94,43 @@ button:focus {
 label{
     font-size: 1.5rem;
     letter-spacing: 1px;
+    margin-right: 20px;
+    text-align: center;
 }
+
+
 .messageBox{
   grid-column: 1;
   grid-row: 3;
   display: flex;
-  justify-content: center;
-  
- 
+	flex-direction: column;
   
 
 }
-textarea{
-  
+
+
+.messageBox textarea{
+  display: flex;
+  justify-content: center;
   line-height: 1.5;
   border-radius: 5px;
   box-shadow: 1px 1px 1px #999;
   background: transparent;
   border: 1px solid #ba68c8;
-  height: 120px;
+  height: 5em;
   resize: none;
-  font-size: 100%;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  
   
   
 }
 
-/* (min-width: 734px)*/
-
-@media only screen and (min-width: 734px) {
-  
-  .form{
-   display:grid;
-   grid-template-columns: 1;
-   grid-template-rows: 4;
-}
-
-  .name{
-    grid-column: 1;
-    grid-row: 1;
-    padding: 10px;
-    width: auto;
-    
-
-  }
-
-  .email{
-    grid-column: 1;
-    grid-row: 2;
-    padding: 10px;
-    width: auto;
-  
-  }
-
-  .messageBox{
-    grid-column: 1;
-    grid-row: 3;
-    display: flex;
-    justify-content: center;
-    
-  
-  }
-
-  
-  
-
-}
-
-
-
-@media only screen and (max-width:738px) {
-  .content{
-   
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    
-  }
-
-  .form{
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 4;
-  width: 18em;
-  height: 30em;
-  border: black solid 2px;
-    
-}
-
-  .name{
-    grid-column: 1;
-    grid-row: 1;
-    width: 13em;
-    
-  }
-
-  .email{
-    grid-column: 1;
-    grid-row: 2;
-    width: 13em;
-  }
-
-
-
-  input{
-    margin-left: 10px;
-    height: 1em;
-    font-size: 100%;
-    border: 2px solid rgb(176, 174, 174);
-    width:8em;
-   
-  }
-
-
-  .messageBox{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1;
-    grid-row: 3;
-
-  }
-
-  .button {
-    grid-column: 1;
-    grid-row: 4;
-    
-    width: 22em;
-    
-  }
-
-
-  
 
 
 
 
-}
+
 
 
 
