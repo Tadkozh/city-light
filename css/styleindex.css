@@ -129,6 +129,13 @@ footer{
   overflow: hidden;
 }
 
+.intro {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem;
+}
+
 @media screen and (max-width: 460px){
   #possibilities article{
     width: 190px !important ;
