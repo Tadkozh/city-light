@@ -26,12 +26,17 @@ width: 100%;
   width: 100%;
 }
 
-.destination{
+.destinationSombre, .destination{
   position: absolute; 
-  top: 100px; 
+  top: 0.5vh; 
   left: 0; 
   width: 100%; 
   font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.destinationSombre{
+  color: white;
 }
 
 /* aside{
@@ -96,9 +101,8 @@ p{
 
 .intro {
   text-align: center;
-  font-size: 1.5rem;
   font-style: italic;
-  line-height: 2rem;
+  font-size: clamp(16px, 5vw, 20px);
 }
 
 h2 {
@@ -131,7 +135,7 @@ header, img {
   overflow:hidden ;
 }
 
-.destination {
+.destination .destinationSombre{
   font-size: 5rem;
 }
 

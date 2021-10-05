@@ -2,7 +2,7 @@
 *, ::before, ::after{
   box-sizing: border-box;
   margin : 0;
-  padding: 0; 
+  padding: 0;
 }
 
 body{
@@ -36,18 +36,10 @@ small{
   background: url("../css/src/test2.jpg") center ;
   background-size: cover;
 }
-/* .wrapper{
-  width: 100vw;
-  margin: 0 auto;
-  padding: 0 10px;
-} */
 
 #main-image h2{
-  /* color: rgb(12, 6, 59);  */
   color:white;
   text-shadow:2px 2px 15px black;
-  /* color:rgb(12, 6, 59);
-  text-shadow:2px 2px 15px white; */
   font-size: clamp(25px, 5vw, 55px);
   font-weight: bold;
   text-transform: uppercase;
@@ -58,8 +50,15 @@ small{
 
 #possibilities{
   height: auto;
-  overflow: hidden;
+  padding-bottom: 3rem;
   background-color: #efefef;
+  width: 100vw;
+}
+
+.introindex{
+  text-align: center;
+  font-style: italic;
+  font-size: clamp(16px, 5vw, 20px);
   width: 100vw;
 }
 
@@ -115,13 +114,6 @@ small{
   grid-template-columns: repeat(auto-fill, 460px);
   justify-content: center;
   gap: 20px;
-  overflow: hidden;
-}
-
-footer{
-  background: aquamarine;
-  height: 50px;
-  width: 100vw;
 }
 
 .navbar_links {
@@ -130,16 +122,12 @@ footer{
 }
 
 
-
 @media screen and (max-width: 460px){
   #possibilities article{
     width: 190px !important ;
     margin: 5px auto;
-    overflow: hidden;
   }
 }
-
-
 
 
   /* ------- REMINDER ------- */
