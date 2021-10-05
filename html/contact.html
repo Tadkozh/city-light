@@ -7,19 +7,29 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>City-Lights</title>
-    <link rel="stylesheet" type="text/css" href="/css/form.css" />
-    <link rel="stylesheet" type="text/css" href="/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="../css/form.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/paul.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbarre.css">
     <script src="/script.js"></script>
   </head>
   <body>
-    <nav>
-      <h1>City Light</h1>
-      <ul class="menu">
-        <li><a href="../index.html">Accueil</a></li>
+    <nav class="navbar dark-mode show-nav">
+      <div class="navbar_logo"><img src="../asset/bon-voyage.png" alt=""></div>
+      
+      <ul class="navbar_links">
+        <li class="navbar_link"><a href="../index.html">Accueil</a></li>
+        <li class="navbar_link"><a href="visiting-Blaye.html">Blaye</a></li>
+        <li class="navbar_link"><a href="visiting-Libourne.html">Libourne</a></li>
+        <li class="navbar_link"><a href="visiting-Lyon.html">Lyon</a></li>
+        <li class="navbar_link"><a href="visiting-Marseille.html">Marseille</a></li>
+        <li class="navbar_link"><a href="visiting-Nantes.html">Nantes</a></li> 
       </ul>
+      <button class="burger">
+          <span class="bar"></span>
+      </button>
     </nav>
   <div class="content">
     <form class="form" method="post" onsubmit="return validateemail();" >
@@ -84,6 +94,7 @@
 
         </section>
     </footer>
-    <script src="../script.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
