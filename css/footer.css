@@ -71,15 +71,18 @@
   .itemup{
     height: 30px;
     animation-name: slideIn;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
   @keyframes slideIn {
-    from {
+    0% {
       transform: translate(70px, 20px);
     }
-    to {
+    50% {
       transform: translate(70px, 0px);
+    }
+    100%{
+      transform: translate(70px, 20px);
     }
   }
   .scroll{
@@ -171,4 +174,4 @@
   /* min-width = mobile-first */
   
   /* max if screen <= 800px {...} */
-  /* max-width = desktop-first */
+  /* max-width = desktop-first */ 
