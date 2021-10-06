@@ -32,21 +32,22 @@
       </button>
     </nav>
   <div class="content">
-    <form class="form grid-container--fill" method="post" onsubmit="return validateemail();" >
+    <form class="form grid-container--fill"  name=form onsubmit="validate();" >
       
         <div class="fname">
           <label for="fname">*Nom:</label>
-          <input type="text"  required />
+          <input type="text" id="fname" required/>
         </div>
 
         <div class="sname">
           <label for="sname">*Prénom:</label>
-          <input type="text"  required />
+          <input type="text" id="sname" required/>
         </div>
 
+
         <div class="email">
-          <label for="email">*Email:</label>
-          <input type="text"  required />
+          <label for="email"  >*Email:</label>
+          <input type="text" id="email" name=emailInput/>
         </div>
       
 
@@ -77,7 +78,7 @@
         </div>
 
         <div class="button">
-          <button type="submit" onclick="recordInput();">Envoyer</button>
+          <button id="button" onclick="validate()">Envoyer</button>
         </div>
       </form>
     </content>
@@ -120,6 +121,6 @@
         </section>
     </footer>
     <script src="../js/navbar.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
