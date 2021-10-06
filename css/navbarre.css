@@ -61,6 +61,7 @@ nav{
     align-items: center;
     height: 6rem;
     width: 6rem;
+    margin-left: 2rem;
     
 }
 
@@ -130,6 +131,32 @@ nav{
 }
 }
     /* bonus anim */
+.animation {
+    animation-name: slideNav;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes slideNav {
+    
+    0% {
+        transform: rotate(20deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(380deg);
+    }
+    
+    
+    
+}
 
 /* medium device */
 
@@ -146,4 +173,5 @@ nav{
         width: 100%;
     }
 }
+
 
