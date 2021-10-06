@@ -65,16 +65,39 @@
     grid-row: 2;
     justify-content: center;
     align-items: flex-end;
+    margin: 3em;
+
   }
   .itemup{
-     height: 30px;
-   }
+    height: 30px;
+    animation-name: slideIn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translate(70px, 20px);
+    }
+    50% {
+      transform: translate(70px, 0px);
+    }
+    100%{
+      transform: translate(70px, 20px);
+    }
+  }
+  .scroll{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+  }
+
   
    /* MENTIONS */
   .lien{
     grid-column: 2 / span 3;
-    grid-row: 1;
-    text-align: center;
+    grid-row : 1;
+    text-align : center;
     color: rgb(12, 6, 59); 
     font-size: 15px;
     font-weight: bold;
@@ -129,25 +152,14 @@
       grid-column: 3;
       grid-row: 1;
       justify-content: flex-end;
+      margin: 3em;
     }
     .copy{
       grid-column: 3;
       grid-row: 1;
       align-items: flex-end;
     }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    /* ------- REMINDER ------- */
-  /* min-width if screen >= {...} */
-  /* min-width = mobile-first */
-  
-  /* max if screen <= 800px {...} */
-  /* max-width = desktop-first */
+
+
+
+    
