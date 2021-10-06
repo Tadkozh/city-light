@@ -182,7 +182,6 @@ button:focus {
 @media screen and (max-width: 684px){
   .grid-container--fill {
     grid-template-columns: repeat(auto-fill, minmax(200px, 5fr));
-    
   }
 
   .form{
@@ -190,8 +189,6 @@ button:focus {
     margin: 5px;
     display: grid;
     grid-template-columns: 1fr;
-    
-    
   }
   input{
     width: 10em;
