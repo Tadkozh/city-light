@@ -14,14 +14,13 @@
   font-family: 'Varela Round', sans-serif;
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
-  height: auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	align-items: center;
 	align-content: stretch;
   width: 40em;
   padding: 2em;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 5px;
   margin-bottom: 30px;
   border: #bdbaba solid 1px;
   border-radius: 10px;
@@ -35,10 +34,6 @@ input{
   margin-left: 10px;
   font-size: 100%;
   border: 2px solid rgb(176, 174, 174);
-  display: flex;
-  flex-direction: column;
-  
-  
 
 }
 
@@ -51,15 +46,36 @@ label{
   
 }
 
-
-
-.fname {
+.formIntroduction{
   grid-column: 1;
   grid-row: 1;
   display: flex;
   justify-content: center;
   padding: 10px;
+  background: #d1c4e9;
+  border-radius: 10px;
+  margin: auto;
+  border:solid black 2px;
+ 
   
+
+}
+.formIntroduction > p{
+  color:white;
+  font-size: 20px;
+}
+
+.fname {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: #d1c4e9;
+  justify-content: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 1em;
   
   
 }
@@ -68,10 +84,14 @@ label{
 
 .sname{
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
   display: flex;
+  background: #d1c4e9;
   justify-content: center;
   padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 1em;
   
   
   
@@ -80,13 +100,17 @@ label{
 }
 
 
-
 .email{
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 4;
   display: flex;
   justify-content: center;
   padding: 10px;
+  background: #d1c4e9;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 1em;
+  
  
   
 
@@ -96,18 +120,26 @@ label{
 
 .choice{
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 5;
   display: flex;
   justify-content: center;
-  margin:auto;
+  background: #d1c4e9;
+  color: rgb(249, 249, 249);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: -1em;
 }
 
 
 .nbDays{
   grid-column: 1;
-  grid-row: 5;
+  grid-row: 6;
   display: flex;
   justify-content: center;
+  background: #d1c4e9;
+  color: rgb(249, 249, 249);
+  border-radius: 10px;
+  padding: 30px;
   
 
 }
@@ -116,7 +148,7 @@ label{
 
 .messageBox{
   grid-column: 1;
-  grid-row: 6;
+  grid-row: 7;
   display: flex;
 	flex-direction: column;
   
@@ -145,7 +177,7 @@ label{
 .button {
   display: flex;
   justify-content: center;
-  grid-row: 7;
+  grid-row: 8;
   padding: 5px;
   font: bold 0.6em sans-serif;
   border-radius: 5px;
@@ -160,17 +192,28 @@ button{
   height: 50px;
   border-radius: 10px;
   background-color: #d1c4e9;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  box-shadow:
+  0 0 7px 3px #fff,  /* inner white */
+  0 0 12px 7px #f0f, /* middle magenta */
+  0 0 17px 11px #0ff; /* outer cyan */
+  
+ 
+  
 }
 
-button:after {
-  content: " >>>";
-}
 
 button:hover,
 button:focus {
   outline: none;
-  background: #000;
   color: #fff;
+  box-shadow:
+  0 0 15px 7px #fff,  /* inner white */
+  0 0 25px 15px #f0f, /* middle magenta */
+  0 0 35px 22px #0ff; /* outer cyan */
+
+  
 }
 
 .grid-container--fill {
@@ -190,6 +233,7 @@ button:focus {
     margin: 5px;
     display: grid;
     grid-template-columns: 1fr;
+    padding: 5px;
     
     
   }
@@ -209,6 +253,7 @@ button:focus {
   .form{
     width: auto;
     align-content: center;
+    padding: 5px;
     
   }
   
@@ -216,11 +261,29 @@ button:focus {
 } 
 
  
+/*list style choice*/
 
 
 
+.day {
+  background-color: #e8e3f2;
+  font-weight: bold!important;
+  color: rgb(28, 3, 3)!important;
+  border-radius: 10px  ;
+  border:solid 1px white;
+  
+}
 
 
+
+.city{
+  background-color: #e8e3f2;
+  font-weight: bold!important;
+  color: rgb(28, 3, 3)!important;
+  border-radius: 10px  ;
+  border:solid 1px white;
+
+}
 
 
 
