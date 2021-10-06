@@ -17,7 +17,7 @@
   </head>
   <body>
     <nav class="navbar dark-mode show-nav">
-      <div class="navbar_logo"><img src="../asset/bon-voyage.png" alt=""></div>
+      <div class="navbar_logo"><a href="../index.html"><img src="../asset/bon-voyage.png" alt=""></a></div>
       
       <ul class="navbar_links">
         <li class="navbar_link"><a href="../index.html">Accueil</a></li>
@@ -33,7 +33,11 @@
     </nav>
   <div class="content">
     <form class="form grid-container--fill"  name=form onsubmit="validate();" >
-      
+        <div class="formIntroduction">
+          
+          <p>Pour plus d'informations, contactez-nous pour organiser votre futur séjour 😉</p>
+          
+        </div>
         <div class="fname">
           <label for="fname">*Nom:</label>
           <input type="text" id="fname" required/>
@@ -53,7 +57,7 @@
 
         <div class="choice">
         <label>Choix de Destination</label>
-        <select id="city" name="city">
+        <select class="city" name="city">
           <option value="Blaye">Blaye</option>
           <option value="Libourne">Libourne</option>
           <option value="Lyon">Lyon</option>
@@ -88,8 +92,8 @@
             <img class ="nous" src ="css/src/nous.jpg" alt="nous">
           </article>
           <article class ="us">
-            <h5>Qui somme nous ?</h5>
-            <p>Une joyeuse bande de lémuriens <br>développeur en formation à <br>la Wild Code School</p>
+            <h5>Qui sommes nous ?</h5>
+            <p>Une joyeuse bande de lémuriens <br>développeurs en formation à <br>la Wild Code School</p>
           </article>
     
           <article class="lien">
