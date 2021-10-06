@@ -116,7 +116,17 @@ small{
   
   grid-template-columns: repeat(auto-fill, 500px);
   justify-content: center;
+<<<<<<< HEAD
   gap: 20px;
+=======
+  overflow: hidden;
+}
+
+footer{
+  background: aquamarine;
+  height: 50px;
+  width: 100vw;
+>>>>>>> a59af1e70861a3ef0451c847357bb28925263b42
 }
 
 .navbar_links {
