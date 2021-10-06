@@ -69,15 +69,20 @@ iframe{
   justify-content: center;
 }
 
+
 ul{
   list-style-type: none;
   color: #333;
   font-size: 1rem;
+
 }
 
 a {
   color: #333;
+  text-decoration: none;
 }
+
+
 
 a:hover{
   color: cornflowerblue;
@@ -86,6 +91,7 @@ a:hover{
 img{
   height: auto;
   width: 100%;
+  border-radius: 10px;
 }
 
 img:hover {
@@ -154,6 +160,33 @@ aside{
   margin: 5% 5% 5% 5%;
 }
 
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+.menu a {
+  border-radius: 10px;
+  border: 2px grey solid;
+}
+
+.titre1{
+  display: flex;
+  grid-column: 1 /span 2;
+  grid-row: 1;
+  justify-content: flex-start;
+
+}
+
+}
+.titre3{
+  display: flex;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  justify-content: center;
+}
+
 li {
   float:left
 }
@@ -180,5 +213,4 @@ main {
 .jour {
   font-size: 3rem;
   padding-bottom: 2rem;
-}
 }
