@@ -50,7 +50,7 @@ small{
 
 #possibilities{
   height: auto;
-  padding-bottom: 3rem;
+  padding: 3rem 0 3rem;
   background-color: #efefef;
   width: 100vw;
 }
@@ -59,6 +59,7 @@ small{
   text-align: center;
   font-style: italic;
   font-size: clamp(16px, 5vw, 20px);
+  padding-bottom: 3rem;
   width: 100vw;
 }
 
@@ -67,8 +68,6 @@ small{
 }
 
 .gridelementindex{
-  /* width: 460px;
-  height: 270px; */
   width: 500px;
   height: 293px;
   border-radius: 10px;
