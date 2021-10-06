@@ -33,7 +33,11 @@
     </nav>
   <div class="content">
     <form class="form grid-container--fill"  name=form onsubmit="validate();" >
-      
+        <div class="formIntroduction">
+          
+          <p>Pour plus d'information, contactez nous pour organiser votre futur séjour 😉</p>
+          
+        </div>
         <div class="fname">
           <label for="fname">*Nom:</label>
           <input type="text" id="fname" required/>
@@ -53,7 +57,7 @@
 
         <div class="choice">
         <label>Choix de Destination</label>
-        <select id="city" name="city">
+        <select class="city" name="city">
           <option value="Blaye">Blaye</option>
           <option value="Libourne">Libourne</option>
           <option value="Lyon">Lyon</option>
