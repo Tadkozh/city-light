@@ -198,6 +198,7 @@ label{
   0 0 3px 1.5px #fff,  /* inner white */
   0 0 6px 3px #f0f, /* middle magenta */
   0 0 8px 5px #0ff; /* outer cyan */
+  cursor: pointer;
   
  
   
@@ -225,8 +226,8 @@ label{
 @media screen and (max-width: 684px){
   .grid-container--fill {
 
-    grid-template-columns: repeat(auto-fill, minmax(200px, 5fr));
-
+    grid-template-columns: repeat(auto-fill, minmax(436px, 5fr));
+    
   }
 
   .form{
@@ -235,7 +236,6 @@ label{
     display: grid;
     grid-template-columns: 1fr;
     padding: 5px;
-    
     
 
   }
