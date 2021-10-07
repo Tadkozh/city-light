@@ -40,26 +40,27 @@ small{
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  animation: main-image 10s linear infinite;
+  animation: main-image 20s linear infinite;
   animation-timing-function: ease-in-out;
 }
 @keyframes main-image {
   0% {
-      background-image: url('../css/src/main-montagne.jpg')
+      background-image: url('../css/src/main-montagne.jpg');
   }
   25% {
-      background-image: url('../css/src/main-paris.jpg')
+      background-image: url('../css/src/main-paris.jpg');
   }
   50% {
-      background-image: url('../css/src/main-moustier.jpg')
+      background-image: url('../css/src/main-moustier.jpg');
   }
   75% {
-    background-image: url('../css/src/main-chateau.jpg')
+      background-image: url('../css/src/main-chateau.jpg');
   }
   100% {
-      background-image: url('../css/src/main-montagne.jpg')
+      background-image: url('../css/src/main-montagne.jpg');
   }
 }
+
 
 
 #main-image h2{
