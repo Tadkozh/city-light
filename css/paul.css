@@ -164,7 +164,7 @@ aside{
 .menu{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 40px 70px 40px 40px ;
+  grid-template-rows: 40px 70px 45px 40px ;
 }
 .menu a {
   border-radius: 10px;
