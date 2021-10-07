@@ -32,10 +32,36 @@ small{
 /*MAIN IMAGE*/
 
 #main-image{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   height: 400px; 
-  background: url("../css/src/test2.jpg") center ;
+  background: url("../css/src/main-montagne.jpg") center ;
   background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: main-image 20s linear infinite;
+  animation-timing-function: ease-in-out;
 }
+@keyframes main-image {
+  0% {
+      background-image: url('../css/src/main-montagne.jpg');
+  }
+  25% {
+      background-image: url('../css/src/main-paris.jpg');
+  }
+  50% {
+      background-image: url('../css/src/main-moustier.jpg');
+  }
+  75% {
+      background-image: url('../css/src/main-chateau.jpg');
+  }
+  100% {
+      background-image: url('../css/src/main-montagne.jpg');
+  }
+}
+
+
 
 #main-image h2{
   color:white;
