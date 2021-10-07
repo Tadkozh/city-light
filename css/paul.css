@@ -39,15 +39,6 @@ width: 100%;
   color: white;
 }
 
-/* aside{
-  background-color: #eee;
-  height: 100%;
-  width: 32%;
-  position: sticky;
-  top: 0;
-} */
-
-/* relief aside + add thta with paul css style*/
 aside{
   padding: 10px 10px;
   background-color: rgb(252, 241, 241);
@@ -69,7 +60,6 @@ iframe{
   justify-content: center;
 }
 
-
 ul{
   list-style-type: none;
   color: #333;
@@ -81,9 +71,6 @@ a {
   color: #333;
   text-decoration: none;
 }
-
-
-
 a:hover{
   color: cornflowerblue;
 }
@@ -137,110 +124,111 @@ li{
  
 @media screen and (min-width: 1024px) {
   
-header {
-  height: 40rem;
+    header {
+      height: 40rem;
 
-}
+    }
 
-header, img {
-  overflow:hidden ;
-}
+    header, img {
+      overflow:hidden ;
+    }
 
-.destination .destinationSombre{
-  font-size: 5rem;
-}
+    .destination .destinationSombre{
+      font-size: 5rem;
+    }
 
-.container {
-  display: block;
-}
+    .container {
+      display: block;
+    }
 
-aside{
-  display: inline-block;
-  width: 90%;
-  position:relative;
-  top: 0;
-  height: 35rem;
-  margin: 5% 5% 5% 5%;
-}
-/* dessous carte */
-.menu{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 40px 70px 45px 40px ;
-}
-.menu a {
-  border-radius: 10px;
-  border: 2px grey solid;
-  background-color: rgb(255, 254, 254);
-  box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
-}
-.titre1{
-  display: flex;
-  grid-column: 1 /span 2;
-  grid-row: 1;
-  justify-content: center;
-}
-.titre2{
-  display: flex;
-  grid-column: 3 /span 4;
-  grid-row: 1;
-  justify-content: center;
-}
+    aside{
+      display: inline-block;
+      width: 90%;
+      position:relative;
+      top: 0;
+      height: 35rem;
+      margin: 5% 5% 5% 5%;
+    }
+    /* dessous carte */
+    .menu{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 40px 70px 45px 40px ;
+    }
+    .menu a {
+      border-radius: 10px;
+      border: 2px grey solid;
+      background-color: rgb(255, 254, 254);
+      box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+    }
+    .titre1{
+      display: flex;
+      grid-column: 1 /span 2;
+      grid-row: 1;
+      justify-content: center;
+    }
+    .titre2{
+      display: flex;
+      grid-column: 3 /span 4;
+      grid-row: 1;
+      justify-content: center;
+    }
 
-.titre3{
-  display: flex;
-  grid-column: 1 / span 4;
-  grid-row: 3;
-  justify-content: center;
-  align-items: center;
-}
-.trip1{
-  display: flex;
-  grid-column: 1 /span 2;
-  grid-row: 2;
-  justify-content: center;
-  align-items: center;
-}
-.trip2{
-  display: flex;
-  grid-column: 3 /span 4;
-  grid-row: 2;
-  justify-content: center;
-  align-items: center;
-}
-.trip3{
-  display: flex;
-  grid-column: 1 /span 4;
-  grid-row: 4;
-  justify-content: center;
-  align-items: center;
-}
+    .titre3{
+      display: flex;
+      grid-column: 1 / span 4;
+      grid-row: 3;
+      justify-content: center;
+      align-items: center;
+    }
+    .trip1{
+      display: flex;
+      grid-column: 1 /span 2;
+      grid-row: 2;
+      justify-content: center;
+      align-items: center;
+    }
+    .trip2{
+      display: flex;
+      grid-column: 3 /span 4;
+      grid-row: 2;
+      justify-content: center;
+      align-items: center;
+    }
+    .trip3{
+      display: flex;
+      grid-column: 1 /span 4;
+      grid-row: 4;
+      justify-content: center;
+      align-items: center;
+    }
 
-/* ----*/
-li {
-  float:left
-}
+    /* ----*/
+    li {
+      float:left
+    }
 
-li a {
-  display: block;
-  text-align: center;
-  padding: 1rem;
-}
+    li a {
+      display: block;
+      text-align: center;
+      padding: 1rem;
+    }
 
-main {
-  width: 100%;
-}
+    main {
+      width: 100%;
+    }
 
-.activity {
-  width: 40%;
-}
+    .activity {
+      width: 40%;
+    }
 
-#Jour_1, #Jour_2, #Jour_3 {
-   display: flex;
-   justify-content: space-around;
-}
+    #Jour_1, #Jour_2, #Jour_3 {
+      display: flex;
+      justify-content: space-around;
+    }
 
-.jour {
-  font-size: 3rem;
-  padding-bottom: 2rem;
+    .jour {
+      font-size: 3rem;
+      padding-bottom: 2rem;
+    }
 }
