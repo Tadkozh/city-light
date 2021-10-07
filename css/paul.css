@@ -164,7 +164,7 @@ aside{
 .menu{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30px 70px 40px 40px ;
+  grid-template-rows: 40px 70px 40px 40px ;
 }
 .menu a {
   border-radius: 10px;
@@ -197,18 +197,21 @@ aside{
   grid-column: 1 /span 2;
   grid-row: 2;
   justify-content: center;
+  align-items: center;
 }
 .trip2{
   display: flex;
   grid-column: 3 /span 4;
   grid-row: 2;
   justify-content: center;
+  align-items: center;
 }
 .trip3{
   display: flex;
   grid-column: 1 /span 4;
   grid-row: 4;
   justify-content: center;
+  align-items: center;
 }
 
 /* ----*/
