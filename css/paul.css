@@ -102,13 +102,18 @@ img:hover {
 
 p{
   padding: 1rem;
-  font-size: 1rem;
+
+  font-size: clamp(15px, 3vw, 1.3rem);
+  line-height: 1.8rem;
 }
 
 .intro {
   text-align: center;
   font-style: italic;
-  font-size: clamp(16px, 5vw, 20px);
+  font-size: clamp(16px, 3.2vw, 1.4rem);
+  /* font-size: clamp(15px, 3vw, 1.3rem); */
+  line-height: 1.8rem;
+  margin: 2rem 1rem 2rem 2rem;
 }
 
 h2 {
@@ -143,9 +148,6 @@ header, img {
 
 .destination .destinationSombre{
   font-size: 5rem;
-}
-.intro{
-  margin: 2rem 1rem 2rem 2rem;
 }
 
 .container {
@@ -238,4 +240,4 @@ main {
 .jour {
   font-size: 3rem;
   padding-bottom: 2rem;
-}
+}  
