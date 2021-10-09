@@ -1,8 +1,8 @@
 Ceci est le fork d'un projet en équipe dont le repo commun se trouve ici :
 https://github.com/RodolpheBeloncle/city-light
 
-Il s'agissait de réaliser en 2 semaines un site en équipe, sans autre technologie de rendu que la base : HTML, CSS, JS vanilla.
-Un soin particulier devait être apporté au responsive.
+Dans le cadre du cursus de la Wild Code School, i s'agissait de réaliser en 2 semaines un site en équipe, sans autre technologie de rendu que la base : HTML, CSS, JS vanilla. Un soin particulier devait être apporté au responsive.
+
 Plus que le site en lui même, cela nous a permis d'appréhender la question de l'organisation d'un travail à plusieurs.
 Pour ce faire, nous avons utilisé plusieurs outils :
 ✅ Marvelapp pour nos wireframes
