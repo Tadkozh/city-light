@@ -5,11 +5,17 @@ Dans le cadre du cursus de la Wild Code School, il s'agissait de réaliser en 2 
 
 Plus que le site en lui même, cela nous a permis d'appréhender la question de l'organisation d'un travail à plusieurs.
 Pour ce faire, nous avons utilisé plusieurs outils :
+
 ✅ Marvelapp pour nos wireframes
+
 ✅ Asana pour organiser nos taches
+
 ✅ Github comme plateforme commune pour notre code
+
 ✅ Discord pour échanger
+
 ✅ Google Drive pour le slide de présentation
+
 Plus que les outils, cette expérience nous a appris à mettre en place un workflow efficace à cinq, et Discord a donc été notre outil prépondérant.
 
 Le site est visitable ici : https://rodolphebeloncle.github.io/city-light/
