@@ -19,6 +19,7 @@ Pour ce faire, nous avons utilisé plusieurs outils :
 Plus que les outils, cette expérience nous a appris à mettre en place un workflow efficace à cinq, et Discord a donc été notre outil prépondérant.
 
 Le site est visitable ici : https://rodolphebeloncle.github.io/city-light/
+
 Au delà de la technique, découvrez notre choix de photos et de textes pour vous présenter cinq villes qui nous sont chères.
 
 Le slide des directives est également sur Github :
